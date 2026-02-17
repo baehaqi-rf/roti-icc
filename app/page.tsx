@@ -177,7 +177,7 @@ export default function Home() {
                 <DetailItem icon={Calendar} title="Hari & Tanggal" content="Senin, 23 Februari 2026" />
                 <DetailItem icon={Clock} title="Waktu" content="17:00 WIB - Selesai" />
                 <DetailItem icon={MapPin} title="Tempat" content="Umatis Resto, BSD City (Kavling Taman Kota Barat Lot No.II.6)" />
-                <DetailItem icon={Shirt} title="Dress Code" content="Nuansa Putih" />
+                <DetailItem icon={Shirt} title="Dress Code" content="Baju Muslim (Koko/Gamis)" />
               </div>
 
               <div className="mt-8 flex gap-3 justify-center">
