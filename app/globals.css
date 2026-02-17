@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --font-sans: var(--font-geist-sans);
+  --font-serif: var(--font-playfair);
+  --font-mono: var(--font-geist-mono);
+  --animate-float: float 6s ease-in-out infinite;
+}
+
+:root {
+  /* Marhaban Ya Ramadhan Theme (Emerald & Gold) */
+  --background: #022c22;
+  /* Emerald 950 - Deep Green */
+  --foreground: #ecfdf5;
+  /* Emerald 50 - Very Light Green/White */
+
+  --primary: #fbbf24;
+  /* Amber 400 - Bright Gold */
+  --primary-foreground: #022c22;
+
+  --secondary: #064e3b;
+  /* Emerald 900 */
+
+  --accent: #d97706;
+  /* Amber 600 - Deep Gold */
+
+  --muted: #065f46;
+  /* Emerald 800 */
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
